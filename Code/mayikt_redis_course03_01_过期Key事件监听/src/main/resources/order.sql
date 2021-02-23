@@ -1,0 +1,14 @@
+CREATE TABLE `order_number` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `order_name` VARCHAR(255) DEFAULT NULL,
+  `order_status` INT(11) DEFAULT NULL,
+  `order_token` VARCHAR(255) DEFAULT NULL,
+  `order_id` VARCHAR(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=INNODB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO order_number VALUES (21,'蚂蚁课堂永久会员',012,'de293ead-7314-499d',1574167533250)
+
+
+SELECT * FROM order_number
